@@ -1,0 +1,12 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    color: rgb(238, 59, 164);
+}
+
+h1:hover{
+    color: rgb(210, 18, 56);
+    transition: 0.3s ease;
+}
