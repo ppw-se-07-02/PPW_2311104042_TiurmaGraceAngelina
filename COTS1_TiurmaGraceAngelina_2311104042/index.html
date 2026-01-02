@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. GRACE - Toko Kucing Terpercaya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="cat-icon">🐱</span> PT. GRACE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Kucing Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="loginBtn">
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Selamat Datang di PT. GRACE</h1>
+                    <p class="lead mb-4">Toko kucing terpercaya dengan kucing ras berkualitas tinggi dan sehat</p>
+                    <a href="#products" class="btn btn-primary btn-lg">Lihat Koleksi Kucing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Cari ras kucing...">
+                        <button class="btn btn-primary" type="button" id="searchBtn">
+                            Cari
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendation Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 order-md-2 order-lg-1">
+                    <div class="recommendation-sidebar">
+                        <h5 class="mb-3 fw-bold">Rekomendasi</h5>
+                        
+                        <!-- Recommended Cat 1 -->
+                        <a href="detail.html?id=2" class="recommendation-item">
+                            <img src="assets/2.png" alt="Scottish Fold">
+                            <p class="mb-0">Scottish Fold</p>
+                        </a>
+                        
+                        <!-- Recommended Cat 2 -->
+                        <a href="detail.html?id=3" class="recommendation-item">
+                            <img src="assets/3.png" alt="Maine Coon">
+                            <p class="mb-0">Maine Coon</p>
+                        </a>
+                        
+                        <!-- Recommended Cat 3 -->
+                        <a href="detail.html?id=4" class="recommendation-item">
+                            <img src="assets/4.png" alt="Ragdoll">
+                            <p class="mb-0">Ragdoll</p>
+                        </a>
+                        
+                        <!-- Recommended Cat 4 -->
+                        <a href="detail.html?id=6" class="recommendation-item">
+                            <img src="assets/6.png" alt="Munchkin">
+                            <p class="mb-0">Munchkin</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9 col-md-12 order-md-1 order-lg-2">
+                    <!-- Products Section -->
+                    <section id="products">
+                        <h2 class="mb-4">Koleksi Kucing Kami</h2>
+                        <div class="row g-4" id="productGrid">
+                            <!-- Product 1 -->
+                            <div class="col-md-6 col-lg-4 product-card" data-name="kucing persia peaknose">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="assets/7.png" class="card-img-top" alt="Kucing Persia Peaknose">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Kucing Persia Peaknose</h5>
+                                        <p class="card-text text-muted">Persia peaknose betina, usia 3 bulan, warna putih, sudah vaksin</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 mb-0 text-primary">Rp 3.500.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="detail.html?id=1" class="btn btn-outline-primary w-100 mb-2">Lihat Detail</a>
+                                        <button class="btn btn-primary w-100 add-to-cart" data-id="1" data-name="Kucing Persia Peaknose" data-price="3500000">
+                                            Pesan Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 2 -->
+                            <div class="col-md-6 col-lg-4 product-card" data-name="kucing scottish fold">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="assets/2.png" class="card-img-top" alt="Kucing Scottish Fold">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Kucing Scottish Fold</h5>
+                                        <p class="card-text text-muted">Scottish Fold jantan, usia 4 bulan, abu-abu, telinga lipat</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 mb-0 text-primary">Rp 5.500.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="detail.html?id=2" class="btn btn-outline-primary w-100 mb-2">Lihat Detail</a>
+                                        <button class="btn btn-primary w-100 add-to-cart" data-id="2" data-name="Kucing Scottish Fold" data-price="5500000">
+                                            Pesan Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 3 -->
+                            <div class="col-md-6 col-lg-4 product-card" data-name="kucing maine coon">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="assets/3.png" class="card-img-top" alt="Kucing Maine Coon">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Kucing Maine Coon</h5>
+                                        <p class="card-text text-muted">Maine Coon jantan, usia 5 bulan, brown tabby, bulu panjang</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 mb-0 text-primary">Rp 8.000.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="detail.html?id=3" class="btn btn-outline-primary w-100 mb-2">Lihat Detail</a>
+                                        <button class="btn btn-primary w-100 add-to-cart" data-id="3" data-name="Kucing Maine Coon" data-price="8000000">
+                                            Pesan Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 4 -->
+                            <div class="col-md-6 col-lg-4 product-card" data-name="kucing ragdoll">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="assets/4.png" class="card-img-top" alt="Kucing Ragdoll">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Kucing Ragdoll</h5>
+                                        <p class="card-text text-muted">Ragdoll betina, usia 3 bulan, seal point, mata biru</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 mb-0 text-primary">Rp 6.500.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="detail.html?id=4" class="btn btn-outline-primary w-100 mb-2">Lihat Detail</a>
+                                        <button class="btn btn-primary w-100 add-to-cart" data-id="4" data-name="Kucing Ragdoll" data-price="6500000">
+                                            Pesan Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 5 -->
+                            <div class="col-md-6 col-lg-4 product-card" data-name="kucing british shorthair">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="assets/5.png" class="card-img-top" alt="Kucing British Shorthair">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Kucing British Shorthair</h5>
+                                        <p class="card-text text-muted">British Shorthair jantan, usia 4 bulan, blue grey, pipi chubby</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 mb-0 text-primary">Rp 4.500.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="detail.html?id=5" class="btn btn-outline-primary w-100 mb-2">Lihat Detail</a>
+                                        <button class="btn btn-primary w-100 add-to-cart" data-id="5" data-name="Kucing British Shorthair" data-price="4500000">
+                                            Pesan Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 6 -->
+                            <div class="col-md-6 col-lg-4 product-card" data-name="kucing munchkin">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="assets/6.png" class="card-img-top" alt="Kucing Munchkin">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Kucing Munchkin</h5>
+                                        <p class="card-text text-muted">Munchkin betina, usia 3 bulan, calico, kaki pendek lucu</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 mb-0 text-primary">Rp 7.000.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="detail.html?id=6" class="btn btn-outline-primary w-100 mb-2">Lihat Detail</a>
+                                        <button class="btn btn-primary w-100 add-to-cart" data-id="6" data-name="Kucing Munchkin" data-price="7000000">
+                                            Pesan Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 PT. GRACE - Toko Kucing Terpercaya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="cartToast" class="toast" role="alert">
+            <div class="toast-header bg-success text-white">
+                <strong class="me-auto">Berhasil!</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Kucing berhasil ditambahkan! Hubungi kami untuk pemesanan.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

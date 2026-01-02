@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Administrator</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <h1>Administrator PT. GRACE</h1>
+    </header>
+
+    <aside>
+        <h2>Menu</h2>
+        <nav>
+            <ul>
+                <li><a href="#data-user" class="active">Data User</a></li>
+                <li><a href="#kelola-produk">Kelola Produk</a></li>
+                <li><a href="#edit-password">Edit Password</a></li>
+                <li class="logout"><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h2>Konten Dinamis - Data User</h2>
+        
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Total User</h3>
+                <div class="number">150</div>
+                <p>Pengguna terdaftar</p>
+            </div>
+            <div class="card">
+                <h3>Total Produk</h3>
+                <div class="number">45</div>
+                <p>Produk tersedia</p>
+            </div>
+            <div class="card">
+                <h3>Transaksi Hari Ini</h3>
+                <div class="number">23</div>
+                <p>Transaksi berhasil</p>
+            </div>
+        </div>
+
+        <h3 style="margin-bottom: 15px; color: #2c3e50;">Daftar User</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ahmad Rizki</td>
+                    <td>ahmad@email.com</td>
+                    <td>Admin</td>
+                    <td>Aktif</td>
+                    <td>
+                        <button class="btn btn-edit">Edit</button>
+                        <button class="btn btn-delete">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Siti Nurhaliza</td>
+                    <td>siti@email.com</td>
+                    <td>Member</td>
+                    <td>Aktif</td>
+                    <td>
+                        <button class="btn btn-edit">Edit</button>
+                        <button class="btn btn-delete">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Budi Santoso</td>
+                    <td>budi@email.com</td>
+                    <td>Member</td>
+                    <td>Aktif</td>
+                    <td>
+                        <button class="btn btn-edit">Edit</button>
+                        <button class="btn btn-delete">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dewi Kartika</td>
+                    <td>dewi@email.com</td>
+                    <td>Member</td>
+                    <td>Nonaktif</td>
+                    <td>
+                        <button class="btn btn-edit">Edit</button>
+                        <button class="btn btn-delete">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Eko Prasetyo</td>
+                    <td>eko@email.com</td>
+                    <td>Member</td>
+                    <td>Aktif</td>
+                    <td>
+                        <button class="btn btn-edit">Edit</button>
+                        <button class="btn btn-delete">Hapus</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dashboard Administrator. All Rights Reserved.</p>
+        <p>Developed by IT Team</p>
+    </footer>
+</body>
+</html>
