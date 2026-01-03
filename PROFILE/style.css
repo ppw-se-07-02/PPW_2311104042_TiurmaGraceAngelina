@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #b02690;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #c22fb6;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+nav ul li a:hover {
+    background-color: #834885;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    margin: 0;
+    align-items: stretch;
+}
+
+aside.populer {
+    background-color: #b664bd;
+    width: 200px;
+    padding: 20px;
+    align-self: stretch;
+}
+
+aside.populer h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #5b1a53;
+}
+
+aside.populer ul {
+    list-style: none;
+}
+
+aside.populer ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+aside.populer ul li a {
+    color: #712d6d;
+    text-decoration: none;
+}
+
+aside.populer ul li a:hover {
+    color: #ff87fd;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+    background-color: white;
+}
+
+main h2 {
+    color: #4c044f;
+    margin-bottom: 20px;
+}
+
+main h3 {
+    color: #ca54c8;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+main p {
+    line-height: 1.6;
+    color: #a34c90;
+    margin-bottom: 15px;
+}
+
+.produk-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.produk-item {
+    background-color: #e48ee1;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.produk-item h4 {
+    color: #7b1e84;
+    margin-bottom: 8px;
+}
+
+.produk-item .harga {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+aside.iklan {
+    background-color: #e090c0;
+    width: 200px;
+    padding: 20px;
+    align-self: stretch;
+}
+
+aside.iklan h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #c305ad;
+}
+
+.iklan-box {
+    background-color: #ed8dcd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ae6595;
+}
+
+footer {
+    background-color: #db67db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
