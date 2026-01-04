@@ -1,0 +1,644 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Muhammad Rizki Pratama</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        
+        /* Header Navigation */
+        nav {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .content {
+            background: white;
+            margin: -50px auto 3rem;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .info-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .info-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        
+        /* Education & Experience */
+        .timeline-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 4px solid #764ba2;
+            transition: transform 0.3s;
+        }
+        
+        .timeline-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-item h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-item .year {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .skill-item i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Blog Section */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .blog-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .blog-content {
+            padding: 1.5rem;
+        }
+        
+        .blog-content h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .blog-meta {
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-excerpt {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .read-more:hover {
+            color: #764ba2;
+        }
+        
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        /* Tab Switcher */
+        .tab-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .tab-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .tab-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .tab-btn.active {
+            background: #764ba2;
+        }
+        
+        .page-content {
+            display: none;
+        }
+        
+        .page-content.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 2rem 1rem;
+            }
+            
+            .tab-btn {
+                display: block;
+                width: 100%;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">💼 MyCV</div>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Tab Switcher for Preview -->
+    <div class="tab-container">
+        <button class="tab-btn active" onclick="showPage('home')">📄 Lihat Halaman HOME</button>
+        <button class="tab-btn" onclick="showPage('blog')">📝 Lihat Halaman BLOG</button>
+    </div>
+    
+    <!-- HOME PAGE -->
+    <div id="home-page" class="page-content active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Ccircle cx='90' cy='90' r='90' fill='%23fff'/%3E%3Ctext x='90' y='110' font-size='60' text-anchor='middle' fill='%23667eea'%3E👤%3C/text%3E%3C/svg%3E" alt="Profile" class="profile-img">
+                <h1>Muhammad Rizki Pratama</h1>
+                <p>Mahasiswa Informatika | Telkom University</p>
+            </div>
+        </section>
+        
+        <!-- Main Content -->
+        <div class="container">
+            <div class="content">
+                <!-- Biodata Section -->
+                <section class="section">
+                    <h2>📋 Biodata Pribadi</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Nama Lengkap</strong>
+                            Muhammad Rizki Pratama
+                        </div>
+                        <div class="info-item">
+                            <strong>Tempat, Tanggal Lahir</strong>
+                            Bandung, 15 Agustus 2004
+                        </div>
+                        <div class="info-item">
+                            <strong>Alamat</strong>
+                            Jl. Telekomunikasi No. 1, Bandung
+                        </div>
+                        <div class="info-item">
+                            <strong>Email</strong>
+                            rizki.pratama@student.telkomuniversity.ac.id
+                        </div>
+                        <div class="info-item">
+                            <strong>No. HP</strong>
+                            +62 812-3456-7890
+                        </div>
+                        <div class="info-item">
+                            <strong>Jenis Kelamin</strong>
+                            Laki-laki
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Education Section -->
+                <section class="section">
+                    <h2>🎓 Pendidikan</h2>
+                    <div class="timeline-item">
+                        <div class="year">2022 - Sekarang</div>
+                        <h3>Telkom University</h3>
+                        <p><strong>S1 Informatika</strong></p>
+                        <p>IPK: 3.75 | Fokus pada Web Development dan Data Science</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2019 - 2022</div>
+                        <h3>SMA Negeri 5 Bandung</h3>
+                        <p><strong>Jurusan IPA</strong></p>
+                        <p>Nilai UN: 92.5 | Ketua OSIS periode 2021-2022</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2016 - 2019</div>
+                        <h3>SMP Negeri 8 Bandung</h3>
+                        <p>Juara 2 Olimpiade Matematika Tingkat Kota</p>
+                    </div>
+                </section>
+                
+                <!-- Skills Section -->
+                <section class="section">
+                    <h2>💪 Keterampilan</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div>💻</div>
+                            <strong>Web Development</strong>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <div>🐍</div>
+                            <strong>Python Programming</strong>
+                            <p>Django, Flask, Pandas</p>
+                        </div>
+                        <div class="skill-item">
+                            <div>📊</div>
+                            <strong>Microsoft Office</strong>
+                            <p>Word, Excel, PowerPoint</p>
+                        </div>
+                        <div class="skill-item">
+                            <div>🎨</div>
+                            <strong>Design</strong>
+                            <p>Figma, Canva, Adobe XD</p>
+                        </div>
+                        <div class="skill-item">
+                            <div>🗣️</div>
+                            <strong>Bahasa</strong>
+                            <p>Indonesia, Inggris (Intermediate)</p>
+                        </div>
+                        <div class="skill-item">
+                            <div>🤝</div>
+                            <strong>Soft Skills</strong>
+                            <p>Leadership, Teamwork, Problem Solving</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Experience Section -->
+                <section class="section">
+                    <h2>🏆 Pengalaman Organisasi</h2>
+                    <div class="timeline-item">
+                        <div class="year">2023 - 2024</div>
+                        <h3>Himpunan Mahasiswa Informatika</h3>
+                        <p><strong>Ketua Divisi IT</strong></p>
+                        <p>Mengelola website himpunan dan mengadakan workshop coding untuk anggota</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2022 - 2023</div>
+                        <h3>Google Developer Student Clubs</h3>
+                        <p><strong>Member</strong></p>
+                        <p>Aktif mengikuti workshop dan hackathon, belajar teknologi cloud computing</p>
+                    </div>
+                </section>
+                
+                <!-- Hobbies Section -->
+                <section class="section">
+                    <h2>🎯 Hobi & Minat</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            ⚽ <strong>Olahraga</strong> - Futsal, Badminton
+                        </div>
+                        <div class="info-item">
+                            📚 <strong>Membaca</strong> - Tech blogs, Novel fiksi
+                        </div>
+                        <div class="info-item">
+                            🎮 <strong>Gaming</strong> - Strategy games
+                        </div>
+                        <div class="info-item">
+                            ✈️ <strong>Traveling</strong> - Eksplorasi tempat baru
+                        </div>
+                        <div class="info-item">
+                            🎵 <strong>Musik</strong> - Bermain gitar
+                        </div>
+                        <div class="info-item">
+                            📷 <strong>Fotografi</strong> - Landscape photography
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <!-- BLOG PAGE -->
+    <div id="blog-page" class="page-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>📝 Blog Saya</h1>
+                <p>Berbagi cerita, pengalaman, dan pemikiran</p>
+            </div>
+        </section>
+        
+        <div class="container">
+            <div class="content">
+                <section class="section">
+                    <h2>✍️ Artikel Terbaru</h2>
+                    <div class="blog-grid">
+                        <div class="blog-card">
+                            <div class="blog-img">📚</div>
+                            <div class="blog-content">
+                                <h3>Pengalaman Pertama di Telkom University</h3>
+                                <div class="blog-meta">📅 24 November 2024 | ✍️ Rizki Pratama</div>
+                                <p class="blog-excerpt">
+                                    Hari pertama kuliah di Telkom University adalah pengalaman yang tak terlupakan. 
+                                    Saya merasa excited sekaligus nervous. Kampus yang luas dan fasilitas yang lengkap 
+                                    membuat saya semakin bersemangat untuk belajar...
+                                </p>
+                                <a href="#" class="read-more">Baca Selengkapnya →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-img">💻</div>
+                            <div class="blog-content">
+                                <h3>Belajar WordPress untuk Tugas Kuliah</h3>
+                                <div class="blog-meta">📅 23 November 2024 | ✍️ Rizki Pratama</div>
+                                <p class="blog-excerpt">
+                                    Hari ini saya belajar membuat website menggunakan WordPress. Awalnya terasa sulit, 
+                                    tapi setelah mengikuti tutorial step by step, ternyata cukup mudah! WordPress adalah 
+                                    platform yang powerful untuk membuat website...
+                                </p>
+                                <a href="#" class="read-more">Baca Selengkapnya →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-img">🚀</div>
+                            <div class="blog-content">
+                                <h3>Rencana Karir di Masa Depan</h3>
+                                <div class="blog-meta">📅 22 November 2024 | ✍️ Rizki Pratama</div>
+                                <p class="blog-excerpt">
+                                    Setelah lulus nanti, saya berencana untuk bekerja di bidang teknologi informasi. 
+                                    Saya tertarik dengan perkembangan AI dan machine learning yang semakin pesat. 
+                                    Untuk mencapai tujuan tersebut...
+                                </p>
+                                <a href="#" class="read-more">Baca Selengkapnya →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-img">🎨</div>
+                            <div class="blog-content">
+                                <h3>Tips Membuat Website yang Menarik</h3>
+                                <div class="blog-meta">📅 20 November 2024 | ✍️ Rizki Pratama</div>
+                                <p class="blog-excerpt">
+                                    Dalam pembuatan website, desain yang menarik sangat penting untuk user experience. 
+                                    Berikut beberapa tips yang saya pelajari selama membuat berbagai project website 
+                                    di kampus...
+                                </p>
+                                <a href="#" class="read-more">Baca Selengkapnya →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-img">🏆</div>
+                            <div class="blog-content">
+                                <h3>Pengalaman Mengikuti Hackathon Pertama</h3>
+                                <div class="blog-meta">📅 18 November 2024 | ✍️ Rizki Pratama</div>
+                                <p class="blog-excerpt">
+                                    Hackathon pertama saya adalah pengalaman yang sangat berharga. Bekerja dalam tim 
+                                    untuk menyelesaikan masalah nyata dalam waktu terbatas mengajarkan banyak hal 
+                                    tentang kolaborasi dan problem solving...
+                                </p>
+                                <a href="#" class="read-more">Baca Selengkapnya →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-img">📱</div>
+                            <div class="blog-content">
+                                <h3>Belajar Mobile App Development</h3>
+                                <div class="blog-meta">📅 15 November 2024 | ✍️ Rizki Pratama</div>
+                                <p class="blog-excerpt">
+                                    Mulai tertarik dengan pengembangan aplikasi mobile. Framework seperti Flutter 
+                                    dan React Native memberikan kemudahan untuk membuat aplikasi cross-platform. 
+                                    Ini adalah jurnal pembelajaran saya...
+                                </p>
+                                <a href="#" class="read-more">Baca Selengkapnya →</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Muhammad Rizki Pratama | Telkom University</p>
+        <p>Made with ❤️ using WordPress</p>
+    </footer>
+    
+    <script>
+        function showPage(page) {
+            // Hide all pages
+            document.querySelectorAll('.page-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected page
+            if (page === 'home') {
+                document.getElementById('home-page').classList.add('active');
+                document.querySelectorAll('.tab-btn')[0].classList.add('active');
+            } else if (page === 'blog') {
+                document.getElementById('blog-page').classList.add('active');
+                document.querySelectorAll('.tab-btn')[1].classList.add('active');
+            }
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html></style>
+<!-- end Simple Custom CSS and JS -->
